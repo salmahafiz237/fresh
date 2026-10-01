@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product details | FreshCart</title>
+  <meta name="description" content="View product details, ratings, and add items to your FreshCart.">
+  <link rel="canonical" href="product.html">
+  <meta property="og:title" content="Product details | FreshCart">
+  <meta property="og:description" content="View product details and add to cart.">
+  <meta property="og:type" content="product">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header class="site-header">
+    <div class="util-bar">
+      <p>Super Value Deals · Save more with FreshCart</p>
+      <nav class="util-links" aria-label="Utility">
+        <a href="index.html">About</a>
+        <a href="index.html">My Account</a>
+        <a href="index.html">Help</a>
+      </nav>
+    </div>
+    <div class="main-bar">
+      <a class="logo" href="index.html">Fresh<span>Cart</span></a>
+      <button class="menu-toggle" type="button" data-menu-toggle aria-expanded="false" aria-controls="category-nav">Menu</button>
+      <form class="search" data-search-form role="search">
+        <label class="sr-only" for="site-search">Search products</label>
+        <input id="site-search" type="search" name="q" placeholder="Search for products" autocomplete="off">
+        <button type="submit">Search</button>
+      </form>
+      <div class="header-actions">
+        <a class="icon-link" href="index.html">Login</a>
+        <a class="icon-link cart-link" href="cart.html">
+          Cart
+          <span class="badge" data-cart-count hidden>0</span>
+        </a>
+      </div>
+    </div>
+    <nav id="category-nav" class="cat-bar" aria-label="Primary">
+      <a href="index.html">Home</a>
+      <a href="index.html#featured">Featured</a>
+      <a href="index.html#categories">Categories</a>
+      <a href="cart.html">Cart</a>
+    </nav>
+  </header>
+
+  <main id="main" class="layout" data-product>
+    <article class="product-detail">
+      <div class="gallery">
+        <div class="gallery__main" data-gallery-main></div>
+        <div class="thumbs" data-thumbs></div>
+      </div>
+      <div class="product-info">
+        <p class="meta" data-product-meta>Loading…</p>
+        <h1 data-product-title>Product</h1>
+        <p data-product-rating></p>
+        <p data-product-stock></p>
+        <p data-product-price></p>
+        <p data-product-desc></p>
+        <div class="qty">
+          <button type="button" data-qty-minus aria-label="Decrease quantity">−</button>
+          <label class="sr-only" for="qty">Quantity</label>
+          <input id="qty" type="number" min="1" value="1">
+          <button type="button" data-qty-plus aria-label="Increase quantity">+</button>
+        </div>
+        <p><button class="btn" type="button" data-add>Add to cart</button></p>
+      </div>
+    </article>
+    <section class="section">
+      <div class="section__head">
+        <h2>Reviews</h2>
+      </div>
+      <div class="reviews" data-reviews></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <div>
+        <a class="logo" href="index.html">Fresh<span>Cart</span></a>
+        <p>Groceries, fashion, and electronics with free shipping and easy returns.</p>
+      </div>
+      <div>
+        <h2>Shop</h2>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#featured">Featured products</a></li>
+          <li><a href="cart.html">Cart</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Help</h2>
+        <ul>
+          <li><a href="index.html">Shipping</a></li>
+          <li><a href="index.html">Returns</a></li>
+          <li><a href="index.html">Support</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2>Contact</h2>
+        <p>support@freshcart.local</p>
+      </div>
+    </div>
+    <p class="footer-copy">© FreshCart. All rights reserved.</p>
+  </footer>
+  <script type="module" src="js/product.js"></script>
+</body>
+</html>

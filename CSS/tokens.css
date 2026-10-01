@@ -1,0 +1,15 @@
+:root {
+  --green: #0aad0a;
+  --green-dark: #088a08;
+  --green-soft: #e8f8e8;
+  --ink: #1b1f23;
+  --muted: #6c757d;
+  --line: #e7e9ee;
+  --bg: #f8f9fa;
+  --white: #ffffff;
+  --danger: #dc3545;
+  --radius: 14px;
+  --shadow: 0 8px 24px rgba(16, 24, 40, 0.06);
+  --max: 1180px;
+  --font: "Inter", "Segoe UI", system-ui, sans-serif;
+}
